@@ -1,4 +1,6 @@
-# our own MAGA generator, imitating the @MAGABot1 parody twitter bot
+# our own MAGA generator, imitating the @MAGABot1 parody twitter bot, a bot that imitates the "Make America Great Again" slogan
+
+# choosing and displaying a random value 
 
 a<-c(1,2,3,4,5,6)
 sample(a, 8, replace=TRUE)
