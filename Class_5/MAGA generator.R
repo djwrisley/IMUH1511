@@ -24,7 +24,7 @@ paste("Make America", sample(adj, 1), "Again")
 
 # instead of downloading that file to your machine you can load it in from a github repository
 
-adj_git <- "https://github.com/djwrisley/IMUH1511/blob/master/Class_5/adj.txt"
+adj_git <- "https://raw.githubusercontent.com/djwrisley/IMUH1511/master/Class_5/adj.txt"
 adjgit <- scan(adj_git, what="", sep="\n")
 paste("Make America", sample(adjgit, 1), "Again")
 
