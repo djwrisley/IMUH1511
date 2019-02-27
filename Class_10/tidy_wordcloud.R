@@ -50,3 +50,18 @@ tokens_clean <- tokens_clean %>%
 
 tokens_clean %>%
   with(wordcloud(word, n, random.order = FALSE, max.words = 150, colors=pal))
+
+
+# you can also fetch text from PG an open repository, adapted from https://www.tidytextmining.com/tidytext.html
+
+library(gutenbergr)
+
+burton <- gutenberg_download(c(3435, 3436, 3437, 3438, 3439, 3440, 3441, 3442, 3443, 3444))
+
+tidy_burton <- burton %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+tidy_burton %>% 
+  with(wordcloud(word, n, random.order = FALSE, max.words = 150, colors=pal))
