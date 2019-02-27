@@ -56,6 +56,8 @@ tokens_clean %>%
 
 library(gutenbergr)
 
+# this fetches all ten volumes of Burton's translation of 1001 Nights 
+
 burton <- gutenberg_download(c(3435, 3436, 3437, 3438, 3439, 3440, 3441, 3442, 3443, 3444))
 
 tidy_burton <- burton %>%
