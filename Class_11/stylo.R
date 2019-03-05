@@ -3,6 +3,10 @@
 install.packages("stylo")
 library(stylo)
 
+# let's try stylo with our Harry Potter data first
+
+setwd("/Users/djw12/Downloads/data")
+
 # download the corpus from the class Drive, put it in a folder called corpus
 # make sure that everything is named properly: AuthorofText_TitleorKeyword.txt
 
