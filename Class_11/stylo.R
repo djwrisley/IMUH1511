@@ -1,4 +1,4 @@
-# today is about exploratory data analysis with the corpus you built
+# today is about exploratory data analysis with the corpus you built collectively
 
 install.packages("stylo")
 library(stylo)
